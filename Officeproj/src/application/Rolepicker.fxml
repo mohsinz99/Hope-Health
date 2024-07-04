@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
-      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="359.0" layoutY="459.0" mnemonicParsing="false" text="Doctor/Nurse Login">
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="359.0" layoutY="459.0" mnemonicParsing="false" onAction="#switchToDoctorNurse" text="Doctor/Nurse Login">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="409.0" mnemonicParsing="false" text="Patient Login">
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="409.0" mnemonicParsing="false" onAction="#switchToPatient" text="Patient Login">
          <font>
             <Font size="18.0" />
          </font>
