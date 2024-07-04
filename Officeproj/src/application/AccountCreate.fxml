@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
-      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="358.0" layoutY="538.0" mnemonicParsing="false" onAction="#switchToPatient" text="Back to patient login">
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="358.0" layoutY="512.0" mnemonicParsing="false" onAction="#switchToPatient" text="Back to patient login">
          <font>
             <Font size="18.0" />
          </font>
@@ -26,11 +26,6 @@
          </font>
       </TextField>
       <TextField alignment="CENTER" layoutX="372.0" layoutY="433.0" promptText="Enter preferred username">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </TextField>
-      <TextField alignment="CENTER" layoutX="372.0" layoutY="488.0" promptText="Retype preferred password">
          <font>
             <Font size="13.0" />
          </font>
