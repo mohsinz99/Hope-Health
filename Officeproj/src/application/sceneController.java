@@ -84,7 +84,7 @@ public class sceneController {
 	
 	private boolean validateCredentialsPatient(String username, String password) {
         String line;
-        try (BufferedReader br = new BufferedReader(new FileReader("credentials.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/application/credentials.txt"))) {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(":");
                 if (parts.length == 2) {
@@ -103,7 +103,7 @@ public class sceneController {
 	
 	private boolean validateCredentialsDoctor(String username, String password) {
         String line;
-        try (BufferedReader br = new BufferedReader(new FileReader("credentialsDoc.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/application/credentialsDoc.txt"))) {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(":");
                 if (parts.length == 2) {
