@@ -15,7 +15,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="497.0" mnemonicParsing="false" text="Login">
+      <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="497.0" mnemonicParsing="false" onAction="#switchToPatientDashboard" text="Login">
          <font>
             <Font size="18.0" />
          </font>
@@ -25,12 +25,12 @@
             <Image url="@hope%20hospital.jpg" />
          </image>
       </ImageView>
-      <TextField alignment="CENTER" layoutX="372.0" layoutY="461.0" promptText="Enter Password">
+      <TextField fx:id="passwordField" alignment="CENTER" layoutX="372.0" layoutY="461.0" promptText="Enter Password">
          <font>
             <Font size="13.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="372.0" layoutY="433.0" promptText="Enter Username">
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="372.0" layoutY="433.0" promptText="Enter Username">
          <font>
             <Font size="13.0" />
          </font>
