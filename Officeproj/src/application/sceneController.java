@@ -1,7 +1,9 @@
 package application;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -10,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -24,6 +27,14 @@ public class sceneController {
 	private TextField usernameField1;
 	@FXML
 	private TextField passwordField1;
+	
+	@FXML
+	private TextField usernameinput;
+	@FXML
+	private TextField passwordinput;
+	
+	@FXML
+	private Label message;
 	
 	private Stage stage;
 	private Scene scene;
@@ -64,7 +75,7 @@ public class sceneController {
             stage.setScene(scene);
             stage.show();
         } else {
-            System.out.println("Invalid credentials. Please try again.");
+            message.setText("Invalid credentials. Please try again");
         }
     }
 	
@@ -78,7 +89,7 @@ public class sceneController {
             stage.setScene(scene);
             stage.show();
         } else {
-            System.out.println("Invalid credentials. Please try again.");
+        	message.setText("Invalid credentials. Please try again");
         }
     }
 	
@@ -118,5 +129,26 @@ public class sceneController {
             e.printStackTrace();
         }
         return false;
+    }
+	
+	public void createAccount(ActionEvent event) {
+        String usernamein = usernameinput.getText();
+        String passwordin = passwordinput.getText();
+        if (usernamein.isEmpty() || passwordin.isEmpty()) {
+            message.setText("Username/Password fields cannot be empty");
+            return;
+        }
+        if (validateCredentialsPatient(usernamein,passwordin)) {
+        	message.setText("Account already exists");
+        	return;
+        }
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/application/credentials.txt", true))) {
+            bw.write(usernamein + ":" + passwordin);
+            bw.newLine();
+            message.setText("Account created successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
