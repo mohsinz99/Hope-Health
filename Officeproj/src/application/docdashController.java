@@ -23,7 +23,7 @@ public class docdashController {
         stage.show();
 	}
 	
-	public void switchToPatientMessages(ActionEvent event) throws IOException {
+	public void switchToDocMessages(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("DocMessages.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
