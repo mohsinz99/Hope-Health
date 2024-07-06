@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
       <ImageView fitHeight="200.0" fitWidth="170.0" layoutX="215.0" layoutY="23.0">
@@ -16,12 +15,13 @@
             <Image url="@hope%20hospital.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="256.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Patient ID:" textAlignment="CENTER" wrappingWidth="87.75653076171875">
+      <Text layoutX="215.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Lookup" textAlignment="CENTER" wrappingWidth="170.00000000000023">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
-      <TextField layoutX="226.0" layoutY="296.0" />
+      <TextField layoutX="225.0" layoutY="282.0" promptText="Enter First name" />
       <Button layoutX="256.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" text="Confirm" />
+      <TextField layoutX="225.0" layoutY="307.0" promptText="Enter Last name" />
    </children>
 </AnchorPane>

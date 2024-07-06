@@ -1,3 +1,7 @@
 .backgroundColor{
-	-fx-background-color: "1A9DCE";
+	-fx-background-color: "1A9DCE"; /*this color is only for background */
+}
+
+.buttonColor{
+	-fx-background-color: "EA0000"; /*this color is only for logout button */
 }
