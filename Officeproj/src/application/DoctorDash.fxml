@@ -15,7 +15,7 @@
          </font>
       </Text>
       <Button layoutX="364.0" layoutY="388.0" mnemonicParsing="false" onAction="#switchToPatientLookup" text="View/Update Patient Records" />
-      <Button layoutX="360.0" layoutY="431.0" mnemonicParsing="false" text="Add results from physical tests" />
+      <Button layoutX="318.0" layoutY="430.0" mnemonicParsing="false" text="Add results from physical tests(For doctor only" />
       <Button layoutX="415.0" layoutY="474.0" mnemonicParsing="false" onAction="#switchToDocMessages" text="Messages" />
       <ImageView fitHeight="207.0" fitWidth="208.0" layoutX="346.0" layoutY="125.0" pickOnBounds="true">
          <image>
@@ -23,5 +23,6 @@
          </image>
       </ImageView>
       <Button layoutX="423.0" layoutY="518.0" mnemonicParsing="false" onAction="#switchToRolePicker" styleClass="buttonColor" stylesheets="@application.css" text="Logout" />
+      <Button layoutX="356.0" layoutY="347.0" mnemonicParsing="false" onAction="#switchToAddPatient" text="Add new Patient(For nurse only)" />
    </children>
 </AnchorPane>
