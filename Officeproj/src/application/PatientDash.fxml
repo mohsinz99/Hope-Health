@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="759.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
-      <Text layoutX="28.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Dashboard">
+      <Text layoutX="246.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Dashboard" textAlignment="CENTER" wrappingWidth="268.0508575439453">
          <font>
-            <Font size="16.0" />
+            <Font size="18.0" />
          </font>
       </Text>
+      <ImageView fitHeight="266.0" fitWidth="256.0" layoutX="252.0" layoutY="7.0">
+         <image>
+            <Image url="@hope%20hospital.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="300.0" layoutY="322.0" mnemonicParsing="false" onAction="#switchToViewMyRecords" prefHeight="42.0" prefWidth="159.0" text="View My Records" textAlignment="CENTER" />
+      <Button layoutX="282.0" layoutY="381.0" mnemonicParsing="false" onAction="#switchToContactEdit" prefHeight="42.0" prefWidth="198.0" text="View/Edit Contact Information" textAlignment="CENTER" />
+      <Button layoutX="323.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToVisits" text="Summary Of Visits" />
+      <Button layoutX="330.0" layoutY="443.0" mnemonicParsing="false" onAction="#switchToPatientMessages" prefHeight="35.0" prefWidth="99.0" text="Messages" />
+      <Button layoutX="340.0" layoutY="541.0" mnemonicParsing="false" onAction="#switchToRolePicker" prefHeight="35.0" prefWidth="82.0" text="Logout" />
    </children>
 </AnchorPane>
