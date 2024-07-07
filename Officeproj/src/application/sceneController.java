@@ -40,6 +40,7 @@ public class sceneController {
 	private Parent root;
 	
 	
+	
 	public void switchToPatient(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("Patientlogin.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
