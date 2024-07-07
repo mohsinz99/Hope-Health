@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -17,12 +18,12 @@
             <Image url="@hope%20hospital.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="225.0" layoutY="108.0" prefHeight="43.0" prefWidth="149.0" text="Summary of Visits">
+      <Label layoutX="225.0" layoutY="95.0" prefHeight="43.0" prefWidth="149.0" text="Summary of Visits">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="26.0" layoutY="161.0" prefHeight="215.0" prefWidth="547.0">
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="26.0" layoutY="141.0" prefHeight="215.0" prefWidth="547.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -54,5 +55,6 @@
             <TextField editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
       </GridPane>
+      <Button layoutX="532.0" layoutY="360.0" mnemonicParsing="false" text="Back" />
    </children>
 </AnchorPane>
