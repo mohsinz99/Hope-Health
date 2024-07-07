@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -14,23 +13,23 @@
             <Image url="@hope%20hospital.jpg" />
          </image>
       </ImageView>
-      <TextField layoutX="107.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="107.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="107.0" layoutY="122.0" text="First Name" />
-      <TextField layoutX="242.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="242.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="242.0" layoutY="122.0" text="Last Name" />
-      <TextField layoutX="382.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="382.0" layoutY="95.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="382.0" layoutY="122.0" prefHeight="18.0" prefWidth="143.0" text="Birthday (MM/YYYY)" />
-      <TextField layoutX="107.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="107.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="107.0" layoutY="198.0" text="Height (in)" />
-      <TextField layoutX="246.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="246.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="246.0" layoutY="198.0" text="Weight (lbs)" />
-      <TextField layoutX="382.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
+      <TextField editable="false" layoutX="382.0" layoutY="171.0" prefHeight="17.0" prefWidth="108.0" />
       <Label layoutX="382.0" layoutY="198.0" text="Blood Pressure" />
-      <TextField layoutX="107.0" layoutY="229.0" prefHeight="27.0" prefWidth="388.0" />
+      <TextField editable="false" layoutX="107.0" layoutY="229.0" prefHeight="27.0" prefWidth="388.0" />
       <Label layoutX="108.0" layoutY="256.0" text="Health Issues" />
-      <TextField layoutX="102.0" layoutY="284.0" prefHeight="27.0" prefWidth="388.0" />
+      <TextField editable="false" layoutX="102.0" layoutY="284.0" prefHeight="27.0" prefWidth="388.0" />
       <Label layoutX="103.0" layoutY="311.0" text="Past Meds" />
-      <TextField layoutX="102.0" layoutY="341.0" prefHeight="27.0" prefWidth="388.0" />
+      <TextField editable="false" layoutX="102.0" layoutY="341.0" prefHeight="27.0" prefWidth="388.0" />
       <Label layoutX="103.0" layoutY="368.0" text="Past Immunizations" />
       <Label layoutX="249.0" layoutY="77.0" text="Patient Records" />
    </children>
