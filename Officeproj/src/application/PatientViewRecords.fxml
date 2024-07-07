@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
       <ImageView fitHeight="65.0" fitWidth="54.0" layoutX="273.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -33,6 +33,6 @@
       <TextField editable="false" layoutX="102.0" layoutY="341.0" prefHeight="27.0" prefWidth="388.0" />
       <Label layoutX="103.0" layoutY="368.0" text="Past Immunizations" />
       <Label layoutX="249.0" layoutY="77.0" text="Patient Records" />
-      <Button layoutX="526.0" layoutY="364.0" mnemonicParsing="false" text="Back" textFill="WHITE" />
+      <Button layoutX="526.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchToPatient" text="Back" textFill="WHITE" />
    </children>
 </AnchorPane>
