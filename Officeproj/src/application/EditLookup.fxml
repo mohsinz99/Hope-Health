@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="721.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
    <children>
       <ImageView fitHeight="143.0" fitWidth="119.0" layoutX="301.0" layoutY="14.0">
@@ -42,7 +41,7 @@
       <Text layoutX="307.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure (mm Hg)" />
       <Text layoutX="214.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Systolic" />
       <Text layoutX="452.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diastolic" />
-      <Button layoutX="190.0" layoutY="453.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="88.0" text="Back" />
+      <Button layoutX="190.0" layoutY="453.0" mnemonicParsing="false" onAction="#switchToDoctorNurse" prefHeight="35.0" prefWidth="88.0" text="Back" />
       <Button layoutX="426.0" layoutY="453.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="95.0" text="Save" />
    </children>
 </AnchorPane>
